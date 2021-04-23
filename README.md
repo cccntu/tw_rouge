@@ -1,6 +1,10 @@
-ROUGE score calculator with tradition chinese word segmentation
+# ROUGE score calculator with tradition chinese word segmentation
+
+## Install
 
 `pip install` this repo
+
+## Usage
 
 ```
 >>> from tw_rouge import get_rouge
