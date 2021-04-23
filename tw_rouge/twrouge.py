@@ -4,10 +4,11 @@ from ckiptagger import WS, data_utils
 from rouge import Rouge
 
 cache_dir = os.environ.get("XDG_CACHE_HOME", "~/.cache")
+download_dir = os.path.join(cache_dir, "ckiptagger")
 data_dir = os.path.join(cache_dir, "ckiptagger/data")
-os.makedirs(data_dir, exist_ok=True)
+os.makedirs(download_dir, exist_ok=True)
 if not os.path.exists(os.path.join(data_dir, "model_ws")):
-    data_utils.download_data_gdown(data_dir)
+    data_utils.download_data_gdown(download_dir)
 
 ws = WS(data_dir)
 

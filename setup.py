@@ -7,5 +7,5 @@ setup(
     description="rouge metric for traditional chinese",
     author="Jonathan Chang",
     license="MIT",
-    install_requires=["ckiptagger", "rouge"],
+    install_requires=["ckiptagger[tf,gdown]", "rouge"],
 )
